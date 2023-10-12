@@ -74,7 +74,7 @@ namespace MyWebApplication.Models.DB
 
                 entity.Property(e => e.AccountImage)
                 .HasColumnName("AccountImage")
-                .IsUnicode(false);
+                .HasColumnType("VARCHAR(MAX)");
 
             });
 
